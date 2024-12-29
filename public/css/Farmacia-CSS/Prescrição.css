@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: beige;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; 
+    top: 0; 
+    margin-left: 15%; 
+    background-color: #3d7e66;
+    width: 90%; 
+    padding: 10px 5%; 
+    z-index: 800; 
+    color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    border-radius: 30px; 
+    overflow: hidden;
+    width: 400px;
+    height: 40px;
+    margin-left: 4%;
+    background-color: #4aaa87;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); 
+    transition: transform 0.3s ease;
+}
+.search-container:hover {
+    transform: scale(1.02); 
+}
+.search-input {
+    width: 150%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+.search-input:focus {
+    background-color: #e0e0e0; 
+}
+.search-button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    width: 70%;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.search-button i {
+    font-size: 18px;
+}
+
+/* CONTAINER UM COMEÇA AQUI */
+.container-um {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 6%;
+    margin-left: 20%;
+}
+.jumbotron-um {
+    width: 60%;
+    height: 60%;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 15%;
+}
+
+.jumbotron-um h1 {
+    margin-bottom: 10px;
+}
+.image-container img {
+    max-width: 45%;
+    height: auto;
+    margin-left: 14%;
+    border-radius: 8px;
+}
+/*COMEÇA O CADASTRO*/
+.lista {
+    background-color: #265c4b;
+    text-align: center;
+    display: block;
+    width: 100%;
+    max-width: 470px;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+    margin: 1rem auto;
+    transition: background-color 0.3s ease;
+}
+
+.lista:hover {
+    background-color: #8fc1b5;
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+/* Estilo geral do formulário dentro de um painel */
+.form-wrapper {
+    max-width: 950px; /* Reduz a largura máxima do formulário */
+    margin: 0 auto;
+    padding: 2rem;
+    height: 455px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    margin-left: 25%; /* Adiciona margem à esquerda */
+}
+
+/* Tabela que simula o formato de um dashboard */
+.dashboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+    background-color: #fff;
+}
+
+.dashboard-table th, .dashboard-table td {
+    padding: 0.5rem; 
+    text-align: left;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+}
+
+.dashboard-table th {
+    background-color: #265c4b;
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px; 
+}
+
+.dashboard-table td {
+    background-color: #f9f9f9;
+}
+
+/* Estilo das labels */
+.dashboard-table label {
+    font-size: 18px; 
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilo dos campos de entrada */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 8px; /* Reduz o padding dos campos */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9rem; /* Reduz o tamanho da fonte dos campos */
+    background-color: #f7f7f7;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #0a9978;
+    background-color: #e8f5e9;
+    outline: none;
+}
+
+/* Estilo do botão de envio */
+.submit-btn {
+    background-color: #265c4b;
+    color: white;
+    padding: 10px 18px; 
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem; 
+    width: 550px;
+    margin-top: 2rem;
+    display: block;
+    margin-right: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito hover no botão */
+.submit-btn:hover {
+    background-color: #8fc1b5;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .dashboard-table th, .dashboard-table td {
+        padding: 0.6rem; /* Reduz o padding para telas pequenas */
+    }
+
+    .submit-btn {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Estilos gerais para a tabela de prescrições */
+.col-md-8 {
+    width: 1500px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-left: 26%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.head-title h4 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo da tabela */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.table-striped {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.table th, .table td {
+    padding: 10px;
+    text-align: left;
+    vertical-align: middle;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #3d7e66;
+    color: #fff;
+    font-weight: bold;
+}
+
+.table td {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Botões de ação (Editar e Desativar) */
+.btn {
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-sm {
+    font-size: 12px;
+}
+
+.edit-btn {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+/* Alinhamento do formulário de desativação */
+form {
+    margin-bottom: 0;
+}
+
+form button {
+    width: 100%;
+    font-size: 14px;
+}
+
+/* Estilo de confirmação de desativação */
+.form-inline .btn-danger {
+    width: auto;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .table th, .table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .edit-btn, .btn-danger {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+}

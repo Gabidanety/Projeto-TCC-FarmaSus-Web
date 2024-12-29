@@ -1,0 +1,447 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: beige;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; 
+    top: 0; 
+    margin-left: 15%; 
+    background-color: #3d7e66;
+    width: 90%; 
+    padding: 10px 5%; 
+    z-index: 800; 
+    color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    border-radius: 30px; 
+    overflow: hidden;
+    width: 400px;
+    height: 40px;
+    margin-left: 4%;
+    background-color: #4aaa87;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); 
+    transition: transform 0.3s ease;
+}
+.search-container:hover {
+    transform: scale(1.02); 
+}
+.search-input {
+    width: 150%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+.search-input:focus {
+    background-color: #e0e0e0; 
+}
+.search-button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    width: 70%;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.search-button i {
+    font-size: 18px;
+}
+/* CONTAINER UM COMEÇA AQUI */
+.container-um {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 6%;
+    margin-left: 20%;
+}
+.jumbotron-um {
+    width: 60%;
+    height: 60%;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 15%;
+}
+.jumbotron-um h1 {
+    margin-bottom: 10px;
+}
+.image-container img {
+    max-width: 45%;
+    height: auto;
+    margin-left: 14%;
+    border-radius: 8px;
+}
+/*COMEÇA O CADASTRO*/
+.cadastros-container {
+    background-color: #f6f7f6;
+    padding: 1rem;
+    border-radius: 6px;
+    width: 74%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    margin: 20px auto;
+    margin-left: 23%; 
+}
+.cadastros-container h3 {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+.cadastros-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+.cadastro-item {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.cadastro-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+.cadastrar-link {
+    display: flex;
+    align-items: center;
+    color: #265c4b;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.cadastrar-link:hover {
+    color: #8fc1b5;
+    text-decoration: none;
+}
+.cadastrar-link i {
+    font-size: 2rem;
+    margin-right: 0.3rem;
+}
+/* ACABA O CADASTRO */
+
+#filterModal{
+    background-color: #000000b7;
+}
+#filterModal .modal-dialog {
+    max-width: 500px; 
+    margin: 1.75rem auto; 
+    border: none;
+}
+#filterModal .modal-body {
+    padding: 1rem;
+}
+#filterModal .modal-header{
+    background-color: #3d7e66;
+}
+#filterModal .modal-title{
+    color: #fff;
+    font-weight: bold;
+}
+.mb-3 {
+    margin-bottom: 0.5rem;
+}
+.form-check {
+    width: 33.33%; 
+    padding-right: 0.5rem; 
+}
+.form-check-inline {
+    display: inline-block;
+    width: 33.33%; 
+    padding-right: 0.5rem;
+}
+.form-check-input {
+    margin-right: 0.3rem; 
+}
+#filterModal .d-flex button {
+    margin-right: 0.5rem; 
+}
+.d-flex > div {
+    width: 48%; 
+}
+.aplicar {
+    background-color: #3d7e66; 
+    color: white; 
+    border: none;
+    padding: 0.5rem 1rem; 
+    border-radius: 4px; 
+    font-size: 1rem; 
+    cursor: pointer; 
+    margin-left: 3%;
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+.aplicar:hover {
+    background-color: #265c4b; 
+    transform: translateY(-2px);
+}
+.cancelar {
+    background-color: #3d7e66; 
+    color: white; 
+    border: none;
+    padding: 0.5rem 1rem; 
+    border-radius: 4px; 
+    font-size: 1rem; 
+    cursor: pointer; 
+    margin-right: 35%;
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+.cancelar:hover {
+    background-color: #265c4b; 
+    transform: translateY(-2px);
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Tabela Responsiva */
+@media (max-width: 768px) {
+    .table thead {
+        display: none;
+    }
+
+    .table, .table tbody, .table tr, .table td {
+        display: block;
+        width: 100%;
+    }
+
+    .table td {
+        padding: 10px;
+        text-align: left;
+        border: none;
+        font-size: 0.9rem;
+    }
+
+    .table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        width: 100%;
+        display: inline-block;
+    }
+
+    .search-bar {
+        max-width: 100%;
+    }
+}
+
+
+
+.custom-table {
+    width: 77%;
+    margin-left: 22%;
+    border-radius: 8px;
+    padding: 15px; 
+    margin-bottom: 30px;
+}
+
+.card-header-1 h5 {
+    font-size: 24px; 
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.search-bar input {
+    width: 100%;
+    max-width: 250px; 
+    padding: 8px 12px; 
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.85rem; 
+    color: #333;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+.table-container {
+    width: 100%; 
+    overflow-x: auto;
+    border: none;
+}
+
+table {
+    width: 100%; 
+    border-collapse: collapse;
+    font-size: 0.85rem; 
+    border: none;
+    
+}
+
+th, td {
+    padding: 6px; 
+    text-align: left;
+    border: none;
+    background-color: #f9f9f9;
+}
+
+th {
+    background-color: #265c4b;
+    color: #ffffff;
+    font-weight: 600;
+    border: none;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+    border: none;
+}
+
+
+
+/* Estilo dos ícones de ação */
+.actions .icon-action, .actions .icon-action-2 {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 1rem; /* Reduzindo o tamanho dos ícones */
+    transition: color 0.3s ease;
+}
+
+.actions .icon-action {
+    color: #f7d516;
+}
+
+.actions .icon-action:hover {
+    color: #f1c614;
+}
+
+.actions .icon-action-2 {
+    color: red;
+}
+
+.actions .icon-action-2:hover {
+    color: darkred;
+}
+
+/* Responsividade: Ajustes para dispositivos menores */
+@media (max-width: 768px) {
+    /* A barra de pesquisa ocupa toda a largura da tela em dispositivos móveis */
+    .search-bar input {
+        width: 100%;
+        max-width: none;
+        padding: 8px 12px; /* Diminui o padding */
+    }
+
+    /* Reduzindo o tamanho da tabela em telas menores */
+    table {
+        font-size: 0.75rem; /* Reduzindo ainda mais o tamanho da fonte */
+    }
+
+    th, td {
+        padding: 6px; /* Diminui o padding das células da tabela */
+    }
+
+    /* Reduzindo o tamanho do título */
+    .card-header-1 h5 {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* Estilo para a barra de pesquisa */
+.search-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #265c4b;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+/* Título da barra de pesquisa */
+.search-bar h5 {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Campo de pesquisa */
+.search-bar input {
+    width: 65%; /* Ajusta a largura do campo de pesquisa */
+    max-width: 350px; /* Limita a largura máxima */
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+/* Foco no campo de pesquisa */
+.search-bar input:focus {
+    outline: none;
+    border-color: #f7d516;
+    box-shadow: 0 0 5px rgba(247, 213, 22, 0.5);
+}
+
+/* Estilo para o botão de filtro */
+.botãoInfo {
+    background-color: #265c4b;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+/* Efeito de hover no botão de filtro */
+.botãoInfo:hover {
+    background-color: #3d7e66;
+}
+
+/* Estilo do ícone no botão de filtro */
+.botãoInfo i {
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+}
+
+/* Responsividade: Ajustes para dispositivos menores */
+@media (max-width: 768px) {
+    .search-bar {
+        flex-direction: column; /* Empilha os elementos na vertical em dispositivos móveis */
+        align-items: stretch; /* Estica os elementos para ocupar toda a largura */
+    }
+
+    .search-bar h5 {
+        font-size: 20px; /* Reduz o tamanho da fonte do título em dispositivos móveis */
+        margin-bottom: 10px; /* Adiciona um espaçamento entre o título e os outros elementos */
+    }
+
+    .search-bar input {
+        width: 100%; /* O campo de pesquisa ocupa toda a largura */
+        margin-bottom: 10px; /* Adiciona espaço abaixo do campo de pesquisa */
+    }
+
+    .botãoInfo {
+        width: 100%; /* O botão de filtro ocupa toda a largura */
+        margin-top: 10px; /* Adiciona espaço acima do botão */
+    }
+}

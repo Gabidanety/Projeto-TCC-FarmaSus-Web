@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: rgb(235, 235, 235);
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; 
+    top: 0; 
+    margin-left: 15%; 
+    background-color: #1f2b5b;
+    width: 90%; 
+    padding: 10px 5%; 
+    z-index: 800; 
+    color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    border-radius: 30px; 
+    overflow: hidden;
+    width: 400px;
+    height: 40px;
+    margin-left: 4%;
+    background-color: #4a54aa;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); 
+    transition: transform 0.3s ease;
+}
+.search-container:hover {
+    transform: scale(1.02); 
+}
+.search-input {
+    width: 150%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+.search-input:focus {
+    background-color: #e0e0e0; 
+}
+.search-button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    width: 70%;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.search-button i {
+    font-size: 18px;
+}
+/* CONTAINER UM COMEÇA AQUI */
+.container-um {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 6%;
+    margin-left: 20%;
+}
+.jumbotron-um {
+    width: 60%;
+    height: 60%;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 15%;
+}
+.jumbotron-um h1 {
+    margin-bottom: 10px;
+}
+.image-container img {
+    max-width: 45%;
+    height: auto;
+    margin-left: 14%;
+    border-radius: 8px;
+}
+/*COMEÇA O CADASTRO*/
+/* Estilo geral do formulário dentro de um painel */
+.form-wrapper {
+    max-width: 950px; /* Reduz a largura máxima do formulário */
+    margin: 0 auto;
+    padding: 2rem;
+    height: 950px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    margin-left: 25%; /* Adiciona margem à esquerda */
+}
+
+/* Tabela que simula o formato de um dashboard */
+.dashboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+    background-color: #fff;
+}
+
+.dashboard-table th, .dashboard-table td {
+    padding: 0.5rem; 
+    text-align: left;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+}
+
+.dashboard-table th {
+    background-color: #1f2b5b;
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px; 
+}
+
+.dashboard-table td {
+    background-color: #f9f9f9;
+}
+
+/* Estilo das labels */
+.dashboard-table label {
+    font-size: 18px; 
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilo dos campos de entrada */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 8px; /* Reduz o padding dos campos */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9rem; /* Reduz o tamanho da fonte dos campos */
+    background-color: #f7f7f7;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #1f2b5b;
+    background-color: #e8f5e9;
+    outline: none;
+}
+
+/* Estilo do botão de envio */
+.submit-btn {
+    background-color: #1f2b5b;
+    color: white;
+    padding: 10px 18px; 
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem; 
+    width: 550px;
+    margin-top: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito hover no botão */
+.submit-btn:hover {
+    background-color: #425394;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .dashboard-table th, .dashboard-table td {
+        padding: 0.6rem; /* Reduz o padding para telas pequenas */
+    }
+
+    .submit-btn {
+        width: 100%;
+        max-width: 100%;
+    }
+}

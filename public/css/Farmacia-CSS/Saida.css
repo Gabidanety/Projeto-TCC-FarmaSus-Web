@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: beige;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; 
+    top: 0; 
+    margin-left: 15%; 
+    background-color: #3d7e66;
+    width: 90%; 
+    padding: 10px 5%; 
+    z-index: 800; 
+    color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    border-radius: 30px; 
+    overflow: hidden;
+    width: 400px;
+    height: 40px;
+    margin-left: 4%;
+    background-color: #4aaa87;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); 
+    transition: transform 0.3s ease;
+}
+.search-container:hover {
+    transform: scale(1.02); 
+}
+.search-input {
+    width: 150%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+.search-input:focus {
+    background-color: #e0e0e0; 
+}
+.search-button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    width: 70%;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.search-button i {
+    font-size: 18px;
+}
+
+/* CONTAINER UM COMEÇA AQUI */
+.container-um {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 6%;
+    margin-left: 20%;
+}
+.jumbotron-um {
+    width: 60%;
+    height: 60%;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 15%;
+}
+
+.jumbotron-um h1 {
+    margin-bottom: 10px;
+}
+.image-container img {
+    max-width: 45%;
+    height: auto;
+    margin-left: 14%;
+    border-radius: 8px;
+}  
+/* CONTAINER UM TERMINA AQUI */
+.cadastros-container {
+    background-color: #f6f7f6;
+    padding: 1rem;
+    border-radius: 6px;
+    width: 74%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    margin: 20px auto;
+    margin-left: 23%; 
+}
+.cadastros-container h3 {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+.cadastros-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+.cadastro-item {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.cadastro-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+.cadastrar-link {
+    display: flex;
+    align-items: center;
+    color: #265c4b;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.cadastrar-link:hover {
+    color: #8fc1b5;
+    list-style: none;
+    text-decoration: none;
+}
+.cadastrar-link i {
+    font-size: 2rem;
+    margin-right: 0.3rem;
+}
+.status-busca {
+    font-size: 1rem;
+}
+
+#funcionarioTable {
+    width: 74%;
+    margin-top: 20px;
+    margin-left: 23%;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#funcionarioTable th, #funcionarioTable td {
+    padding: 12.5px;
+    text-align: left;
+    border: 1px solid #ddd;
+    border: none;
+   font-size: 15px;
+}
+
+#funcionarioTable th {
+    background-color: #3d7e66;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+}
+
+#funcionarioTable td {
+    background-color: #fff;
+    border: none;
+}
+
+thead {
+    background-color: #3d7e66;
+    color: white;
+}
+
+.filter-search-container {
+    display: flex;
+    justify-content: flex-start; /* Deixa os itens alinhados à esquerda */
+    align-items: center;
+    margin-bottom: 15px; 
+    gap: 20px; 
+}
+
+/* Botões de Filtro */
+.filter-buttons {
+    display: flex;
+    align-items: center;
+    margin-left: 35%;
+    gap: 10px; 
+}
+
+.p {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+    color: #fff;
+    margin-right: auto; 
+}
+
+/* Estilo para os botões de filtro */
+.filter-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color:#265c4b; /* Verde para ativos */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: #8fc1b5; /* Verde mais escuro no hover */
+}
+
+.filter-btn:nth-child(2) {
+    background-color: #265c4b; /* Vermelho para inativos */
+}
+
+.filter-btn:nth-child(2):hover {
+    background-color: #8fc1b5; /* Vermelho mais escuro no hover */
+}
+
+.filter-btn:nth-child(3) {
+    background-color: #265c4b; /* Azul para todos */
+}
+
+.filter-btn:nth-child(3):hover {
+    background-color: #8fc1b5; /* Azul mais escuro no hover */
+}
+
+/* Barra de Pesquisa */
+.search-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+.search-bar input {
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 2%;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 250px;
+    transition: border-color 0.3s ease;
+}
+
+.search-bar input:focus {
+    border-color: #265c4b; 
+    outline: none;
+}
+
+.text-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    gap: 8px; 
+}
+
+.btn-acao {
+    padding: 5px 10px; 
+    font-size: 0.875rem; 
+    width: auto; 
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 10px;
+    display: inline-block;
+    transition: opacity 0.3s ease;
+}
+
+.btn-acao i {
+    margin-right: 5px;
+}
+
+/* Botão de Editar - Azul */
+.btn-primary {
+    background-color: #ffc508;
+    color: #fff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #8fc1b5;
+}
+
+/* Botão de Excluir - Vermelho */
+.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #8fc1b5;
+}
+
+/* Adicionando estilos gerais de hover */
+.btn-acao:hover {
+    opacity: 0.8;
+}

@@ -1,0 +1,441 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: rgb(235, 235, 235);
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; 
+    top: 0; 
+    margin-left: 15%; 
+    background-color: #1f2b5b;
+    width: 90%; 
+    padding: 10px 5%; 
+    z-index: 800; 
+    color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    border-radius: 30px; 
+    overflow: hidden;
+    width: 400px;
+    height: 40px;
+    margin-left: 4%;
+    background-color: #4a54aa;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); 
+    transition: transform 0.3s ease;
+}
+.search-container:hover {
+    transform: scale(1.02); 
+}
+.search-input {
+    width: 150%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+.search-input:focus {
+    background-color: #e0e0e0; 
+}
+.search-button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    width: 70%;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.search-button i {
+    font-size: 18px;
+}
+/* CONTAINER UM COMEÇA AQUI */
+.container-um {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 6%;
+    margin-left: 20%;
+}
+.jumbotron-um {
+    width: 60%;
+    height: 60%;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 15%;
+}
+.jumbotron-um h1 {
+    margin-bottom: 10px;
+}
+.image-container img {
+    max-width: 45%;
+    height: auto;
+    margin-left: 14%;
+    border-radius: 8px;
+}
+/*COMEÇA O CADASTRO*/
+.cadastros-container {
+    background-color: #f6f7f6;
+    padding: 1rem;
+    border-radius: 6px;
+    width: 74%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    margin: 20px auto;
+    margin-left: 23%; 
+}
+.cadastros-container h3 {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+.cadastros-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+.cadastro-item {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.cadastro-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+.cadastrar-link {
+    display: flex;
+    align-items: center;
+    color: #1F2B5B;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.cadastrar-link:hover {
+    color: #354379;
+    text-decoration: none;
+}
+.cadastrar-link i {
+    font-size: 2rem;
+    margin-right: 0.3rem;
+}
+/* ACABA O CADASTRO */
+
+
+/* Estilo do Formulário de Pesquisa no Cabeçalho */
+.head {
+    background-color: #1F2B5B; 
+    padding: 1rem 1.5rem;
+    border-radius: 1px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between; /* Espaçamento entre o título e a barra de pesquisa */
+    align-items: center;
+    color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    width: 75%; 
+    margin-left: 23%;
+}
+.search-container2 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: auto; 
+    max-width: 400px;
+}
+.search-input2 {
+    width: 10%; 
+    padding: 0.5rem; 
+    border: none;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    outline: none;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.search-button2 {
+    background-color: #4390CC;
+    color: #fff;
+    padding: 0.5rem; 
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+}
+.search-button2:hover {
+    background-color: #1366a7;
+}
+.search-button2 i {
+    font-size: 1rem; /* Diminuindo o ícone do botão */
+}
+/* COMEÇA A TABELA*/
+.custom-table {
+    width: 75%;
+    margin-left: 23%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.custom-table thead {
+    background-color: #1F2B5B;
+    text-align: left;
+}
+.custom-table th {
+    padding: 12px 15px;
+    font-size: 18px;
+    color: #ffffff;
+    border-bottom: 2px solid #ddd;
+}
+/* Corpo da tabela */
+.custom-table td {
+    padding: 10px 15px;
+    font-size: 18px;
+    color: #4e4e4e;
+    border-bottom: 1px solid #ddd;
+}
+/* Estilo para as ações na tabela */
+.actions {
+    text-align: center;
+}
+.icon-action {
+    color: white;
+    background-color: #ffef0f;
+    font-size: 18px;
+    padding: 8px 12px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+.icon-action:hover {
+    background-color: #9ab8d8;
+    transform: scale(1.1); /* Leve aumento no tamanho ao passar o mouse */
+}
+.icon-action:active {
+    transform: scale(0.98); 
+}
+.icon-action-2 {
+    color: white;
+    background-color: #df0202; 
+    font-size: 18px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+.icon-action-2:hover {
+    background-color: #9ab8d8; 
+    transform: scale(1.1); /* Leve aumento no tamanho ao passar o mouse */
+}
+.icon-action-2:active {
+    transform: scale(0.98); /* Efeito de "pressionar" o botão */
+}
+.botao {
+    background-color: #1F2B5B;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    height: 33px;
+}
+.botao:hover {
+    background-color: #9ab8d8;
+}
+/* Responsividade para a tabela */
+@media (max-width: 768px) {
+    .custom-table {
+        width: 100%;
+    }
+    
+    .custom-table th, .custom-table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
+/*MODAL*/
+
+.modal-content {
+    padding: 18px; 
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.modal-header {
+    background-color: #1F2B5B;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+}
+
+.modal-body {
+    height:  20%;
+    padding: 10px 10px 10px 10px; 
+}
+
+.form-check {
+    margin-left: 10%;
+    margin-bottom: 1px; 
+    font-size: 13px; 
+    font-weight: bold;
+    display: inline-block;
+    width: 100%; 
+    padding: 0px; 
+}
+
+.form-check-input {
+    width: 14px; 
+    height: 14px;
+    margin-right: 6px; 
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+}
+
+.col-4 {
+    width: 32%; 
+    padding-right: 5px; 
+    padding-left: 5px; 
+    box-sizing: border-box; 
+}
+
+.col-4 .form-check {
+    width: 100%; 
+}
+
+.btn-primary {
+    background-color: #1F2B5B;
+    border-color: #1F2B5B;
+    padding: 6px 12px; 
+    font-size: 12px; 
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 10px; 
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    padding: 6px 12px; 
+    font-size: 12px; 
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 8px; 
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #4e555b;
+}
+
+
+/* Estilo para os campos de seleção e input de texto */
+.form-select, .form-control {
+    padding: 6px; /* Manter o padding original */
+    font-size: 12px; /* Manter o tamanho da fonte */
+    border-radius: 4px; /* Bordas arredondadas */
+    width: 100%; /* Garantir que ocupem toda a largura disponível */
+    margin-bottom: 10px; /* Espaçamento entre os campos */
+    border: 1px solid #ccc; /* Borda leve */
+    background-color: #fff; /* Cor de fundo branca */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Adicionar transição suave */
+}
+
+/* Estilo ao focar nos campos de input e select */
+.form-select:focus, .form-control:focus {
+    border-color: #1F2B5B;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); /* Adicionar sombra ao focar */
+}
+
+/* Estilização para os rótulos */
+.form-label {
+    font-weight: bold; 
+    font-size: 12px; 
+    margin-bottom: 6px;
+    color: #333; 
+    display: block; 
+}
+
+.form-select:hover, .form-control:hover {
+    border-color: #0056b3; 
+}
+
+
+@media (max-width: 768px) {
+    .form-select, .form-control {
+        font-size: 14px;
+        padding: 8px; 
+    }
+}
+
+
+/* Ajustar o modal para maior responsividade */
+@media (max-width: 768px) {
+    .col-4 {
+        width: 48%; /* Exibe 2 checkboxes por linha em dispositivos menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .col-4 {
+        width: 100%; /* Exibe 1 checkbox por linha em dispositivos muito pequenos */
+    }
+}
+
+/* Estilo do rodapé do modal */
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px; /* Menor padding */
+}
+
+/* Ajustes de margem */
+.mb-3 {
+    margin-bottom: 12px; /* Reduzir o espaço entre os campos */
+}

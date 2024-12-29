@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+}
+
+.container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.section-login {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row {
+
+    display: flex;
+    align-items: center;
+}
+
+.col-6 {
+    flex: 1;
+}
+
+.login-image {
+
+    margin-right: 10px;
+    height: auto;
+}
+
+.section-form {
+
+    background-color: #1F2B5B; 
+    padding: 60px;
+    border-radius: 80px;
+}
+
+.form-group {
+
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group label {
+
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.input {
+
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+    background-color: transparent;
+    color: #fff;
+}
+
+.input:focus {
+
+    outline: none;
+    border-bottom: 2px solid #43A7F1; /* Azul mais claro */
+}
+
+.button-container {
+
+    margin-left: 20px;
+    text-align: center;
+    margin-top: 28px;
+}
+
+
+.button-form1, .button-form2 {
+
+    background-color: #2f4186; 
+    color: #fff;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.button-form1:hover, .button-form2:hover {
+
+    background-color: #43A7F1; 
+    color: #fff;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.button-form1 a, .button-form2 a {
+
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}

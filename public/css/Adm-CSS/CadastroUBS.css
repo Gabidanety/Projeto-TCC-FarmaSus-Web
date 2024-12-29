@@ -1,0 +1,288 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*NAVBAR*/
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: #1F2B5B; 
+    padding: 10px 20px;
+    height: 90px; 
+    color: white;
+}
+
+.navbar-brand {
+    margin-left: 20px; 
+}
+
+.logo {
+    margin-left: 15%;
+    width: 33%; 
+    height: auto; 
+}
+
+/*BARRA DE PESQUISA*/
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; 
+}
+
+.search-input {
+    height: 40px;
+    width: 280px; 
+    padding: 8px;
+    border: none;
+    border-radius: 20%; 
+    outline: none;
+    margin-right: 10px;
+}
+
+.search-button {
+    padding: 8px 12px;
+    background-color: #1a1a2e;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #243f8a; 
+}
+
+/*TERMINA BARRA DE PESQUISA*/
+/*TERMINA A NAVBAR*/
+
+.container-um {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 20px;
+}
+
+.jumbotron-um {
+    width: 40%;
+    background-color: #f8f9fa; 
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 10%; /* Espaçamento à direita do jumbotron */
+}
+
+.jumbotron-um h1 {
+    margin-bottom: 10px; 
+}
+
+.image-container {
+    flex: 0 0 50%; 
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 30%; 
+    height: auto; 
+    border-radius: 8px;
+}
+
+/*COMEÇA O CADASTRO*/
+
+
+
+.container {
+    padding: 20px;
+}
+
+.form-container {
+    max-width: 85%;
+    margin: 10px auto; 
+    border: 1px solid #192351; 
+    border-radius: 10px;
+    background-color: #fcfcfc;
+    padding: 20px;
+    margin-left: 10%;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 1px 0; 
+}
+
+.form-row:last-child {
+    border-bottom: none; 
+}
+
+.form-col {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.form-col:last-child {
+    margin-right: 0;
+}
+
+.full-width {
+    flex: 1 1 100%;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    font-weight: 400;
+    color: #000000;
+}
+
+label i {
+    margin-right: 8px; 
+    color: #192351;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"],
+.add-phone-container button {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    width: 50%;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 8px; 
+}
+
+.button {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 8px; 
+    font-size: 20px;
+}
+
+button[type="button"] {
+    background-color: #c52e28;
+    color: white;
+    padding: 5px 2px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover,
+button[type="submit"]:hover {
+    opacity: 0.8; 
+    background-color: #384081;
+}
+
+.add-phone-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.telefone-field {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.telefone-field input {
+    flex: 1;
+    margin-right: 5px;
+}
+
+.info-text {
+    margin-left: 10px;
+    font-size: 12px;
+    color: #888;
+}
+
+.remove-phone {
+    background-color: transparent;
+    color: #d9534f;
+}
+
+.remove-phone:hover {
+    opacity: 0.7; /* Efeito de hover para o botão de remoção */
+}
+
+
+/* Estilos do Modal */
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Fundo escuro com menos opacidade */
+    transition: opacity 0.3s ease-in-out; /* Suaviza a exibição do modal */
+}
+
+.modal.show {
+    display: block;
+    opacity: 1;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    margin: 10% auto;
+    padding: 25px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7); /* Sombra mais suave */
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(-20px);
+}
+
+.modal-content.show {
+    transform: translateY(0);
+}
+
+.modal-content .close {
+    color: #0f143d;
+    font-size: 26px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    transition: color 0.3s;
+}
+
+.modal-content .close:hover {
+    color: #8490ff;
+}
+
+.modal-content p {
+    font-size: 1.5rem;
+    color: #000000;
+}
+

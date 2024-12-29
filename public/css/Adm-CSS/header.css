@@ -1,0 +1,158 @@
+/* css do header farmácia arrumado como a Aline pediu */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.side-nav {
+    width: 20%;
+    background: #1f2b5b; 
+    height: 100vh; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 6px 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    overflow-y: hidden; 
+    border-bottom-right-radius: 30px; 
+    border-right: 1px solid #000136;
+}
+
+.side-nav .logo {
+    margin-bottom: 4%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.side-nav .logo img {
+    width: 65%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.side-nav ul {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.side-nav ul li {
+    margin-bottom: 6px;
+}
+
+.side-nav ul li a {
+    color: #f0f0f0;
+    font-weight: 400;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    font-size: 16px;
+    background-color: #394ca0;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); 
+}
+
+.side-nav ul li a:hover {
+    background-color: #5668b6; 
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+
+.side-nav ul li a:active {
+    background-color: #1f2b5b;
+}
+
+.side-nav ul li i {
+    font-size: 22px;
+    margin-right: 15px;
+    font-family: 'Font Awesome 5 Free', sans-serif;
+    font-weight: 900;
+}
+
+.side-nav ul li p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+}
+.side-nav ul li.secao {
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    padding-top: 25px;
+    border-top: 2px solid #ddd;
+}
+
+.side-nav .saida {
+    position: absolute;
+    margin-top: 3%;
+    left: 10%; 
+    width: 80%;
+    padding-bottom: 42%;
+    text-align: center; 
+    z-index: 100; 
+}
+
+.side-nav .saida li {
+    margin-bottom: 68%; 
+}
+
+.side-nav .saida li a {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 18px;
+    border-radius: 8px;
+    background-color: #42529c; 
+    transition: all 0.3s ease-in-out;
+    width: 100%; 
+    margin: 0 auto; 
+}
+
+.side-nav .saida li a:hover {
+    background-color: #c62828;
+    transform: scale(1.05);
+}
+
+
+.side-nav .saida li a i {
+    font-size: 20px;
+    margin-right: 10px; 
+}
+
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .side-nav {
+        width: 25%; 
+    }
+    body {
+        margin-left: 25%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .side-nav {
+        width: 100%;
+        height: auto;
+        position: relative;
+        box-shadow: none;
+        padding: 15px 10px;
+    }
+    body {
+        margin-left: 0; 
+    }
+}
+
+body {
+    margin-left: 20%; 
+    transition: margin-left 0.3s ease;
+}

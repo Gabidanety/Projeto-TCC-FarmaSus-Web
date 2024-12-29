@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: rgb(235, 235, 235);
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; 
+    top: 0; 
+    margin-left: 15%; 
+    background-color: #1f2b5b;
+    width: 90%; 
+    padding: 10px 5%; 
+    z-index: 800; 
+    color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    border-radius: 30px; 
+    overflow: hidden;
+    width: 400px;
+    height: 40px;
+    margin-left: 4%;
+    background-color: #4a54aa;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); 
+    transition: transform 0.3s ease;
+}
+.search-container:hover {
+    transform: scale(1.02); 
+}
+.search-input {
+    width: 150%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+.search-input:focus {
+    background-color: #e0e0e0; 
+}
+.search-button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    width: 70%;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.search-button i {
+    font-size: 18px;
+}
+/* CONTAINER UM COMEÇA AQUI */
+.container-um {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 6%;
+    margin-left: 20%;
+}
+.jumbotron-um {
+    width: 60%;
+    height: 60%;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 15%;
+}
+.jumbotron-um h1 {
+    margin-bottom: 10px;
+}
+.image-container img {
+    max-width: 45%;
+    height: auto;
+    margin-left: 14%;
+    border-radius: 8px;
+}
+/*COMEÇA O CADASTRO*/
+
+/* Estilo geral para o corpo do conteúdo */
+#mensagens-lista {
+    margin-left: 30%;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    max-width: 700px; /* Define uma largura máxima para o container */
+}
+
+/* Estilo para cada mensagem individual */
+.mensagem {
+    background-color: #f9f9f9;
+    border-radius: 4px; /* Bordas menores */
+    border: 1px solid #ddd;
+    padding: 10px; /* Reduz ainda mais o padding */
+    margin-bottom: 8px; /* Reduz o espaçamento entre mensagens */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra mais sutil */
+    font-size: 12px; /* Texto menor */
+    line-height: 1.4; /* Reduz a altura da linha */
+}
+
+/* Texto dentro das mensagens */
+.mensagem p {
+    margin: 6px 0; /* Margem ainda menor */
+    font-size: 11px; /* Texto menor */
+    color: #333;
+}
+
+/* Texto destacado */
+.mensagem strong {
+    color: #1f2b5b;
+    font-size: 12px; /* Texto um pouco maior */
+}
+
+/* Estilo para o remetente e e-mail */
+.remetente,
+.email {
+    font-weight: normal;
+    color: #333;
+    font-size: 11px; /* Texto menor */
+}
+
+/* Estilo para a data */
+.data {
+    font-size: 10px; /* Texto menor */
+    color: #888;
+}
+
+/* Estilo para o campo de resposta */
+.responder-form {
+    margin-top: 12px; /* Margem ainda menor */
+}
+
+textarea {
+    width: 100%;
+    max-width: 100%; /* Impede que o textarea ultrapasse a largura do container */
+    padding: 6px; /* Reduz o padding */
+    font-size: 12px; /* Texto menor */
+    border: 1px solid #ddd;
+    border-radius: 3px; /* Bordas menores */
+    resize: vertical;
+    min-height: 50px; /* Altura inicial menor */
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #1f2b5b;
+    box-shadow: 0 0 3px rgba(0, 86, 179, 0.2); /* Sombra mais leve */
+}
+
+/* Botão de enviar resposta */
+.btn-enviar {
+    background-color: #1f2b5b;
+    color: white;
+    padding: 6px 10px; /* Botão menor */
+    border: none;
+    border-radius: 3px; /* Bordas menores */
+    cursor: pointer;
+    font-size: 12px; /* Texto menor */
+    margin-top: 6px;
+    transition: background-color 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: #00408d;
+}
+
+/* Estilo para o botão de exclusão */
+.btn-danger {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 3px; /* Bordas menores */
+    padding: 5px 8px; /* Botão menor */
+    font-size: 11px; /* Texto menor */
+    margin-top: 6px;
+    transition: background-color 0.3s;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+}
+
+.btn-sm {
+    font-size: 10px; /* Texto menor */
+    padding: 3px 6px; /* Botão ainda menor */
+}
+
+/* Responsividade: Ajustes para telas menores */
+@media (max-width: 768px) {
+    #mensagens-lista {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .mensagem {
+        padding: 8px; /* Reduz ainda mais o padding */
+    }
+
+    .responder-form textarea {
+        min-height: 40px; /* Altura inicial menor */
+    }
+}
