@@ -1,7 +1,7 @@
 # 🖥️ Projeto TCC - Site Administrativo Geral e Site Administrativo das UBS
 
-Este repositório contém o código do site administrativo do meu projeto TCC. O site tem como objetivo gerenciar os dados do aplicativo ([Link do repositório do Aplicativo](link-da-imagem-1)
-) que mostra as UBSs (Unidades Básicas de Saúde) mais próximas com os medicamentos que deseja. O projeto é composto por dois sites administrativos, ambos interligados a um único projeto Laravel e com dois bancos de dados distintos.
+Este repositório contém o código do site administrativo do meu projeto TCC. O site tem como objetivo gerenciar os dados do aplicativo [Link do repositório do Aplicativo](https://github.com/Gabidanety/Projeto-TCC-FarmaSUS-Mobile)
+ que mostra as UBSs (Unidades Básicas de Saúde) mais próximas com os medicamentos que deseja. O projeto é composto por dois sites administrativos, ambos interligados a um único projeto Laravel e com dois bancos de dados distintos.
 
 
 ## Descrição
