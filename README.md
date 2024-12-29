@@ -44,9 +44,32 @@ O projeto utiliza dois bancos de dados MySQL:
 
 Após o cadastro de uma UBS no primeiro site, um e-mail é enviado para a UBS com o link do site administrativo correspondente, permitindo que a UBS tenha acesso apenas aos seus próprios dados. Além disso, as entradas e saídas de medicamentos no segundo site devem utilizar os medicamentos já cadastrados no primeiro banco.
 
-## Screenshots
-Aqui você pode adicionar algumas capturas de tela dos sites para ilustrar o funcionamento do sistema.
-
-![Screenshot do Site Administrativo 1](link-da-imagem-1)
-![Screenshot do Site Administrativo 2](link-da-imagem-2)
+## Imagens dos Sites
+Site azul é o AdmGeral, Site Verde é o AdmUbs.
+</br>
+![Screenshot do Site Administrativo 1](ImagenSite/1.jpg)
+![Screenshot do Site Administrativo 1](ImagenSite/9.jpg)
+![Screenshot do Site Administrativo 1](ImagenSite/10.jpg)
+![Screenshot do Site Administrativo 1](ImagenSite/11.jpg)
+![Screenshot do Site Administrativo 1](ImagenSite/12.jpg)
+![Screenshot do Site Administrativo 1](ImagenSite/13.jpg)
+![Screenshot do Site Administrativo 1](ImagenSite/14.jpg)
+![Screenshot do Site Administrativo 1](ImagenSite/15.jpg)
+![Screenshot do Site Administrativo 1](ImagenSite/16.jpg)
+![Screenshot do Site Administrativo 1](ImagenSite/17.jpg)
+![Screenshot do Site Administrativo 1](ImagenSite/18.jpg)
+![Screenshot do Site Administrativo 1](ImagenSite/19.jpg)
+![Screenshot do Site Administrativo 1](ImagenSite/20.jpg)
+![Screenshot do Site Administrativo 1](ImagenSite/2.jpg)
+![Screenshot do Site Administrativo 1](ImagenSite/3.jpg)
+![Screenshot do Site Administrativo 1](ImagenSite/4.jpg)
+![Screenshot do Site Administrativo 1](ImagenSite/21.jpg)
+![Screenshot do Site Administrativo 1](ImagenSite/22.jpg)
+![Screenshot do Site Administrativo 1](ImagenSite/23.jpg)
+![Screenshot do Site Administrativo 1](ImagenSite/24.jpg)
+![Screenshot do Site Administrativo 1](ImagenSite/25.jpg)
+![Screenshot do Site Administrativo 1](ImagenSite/5.jpg)
+![Screenshot do Site Administrativo 1](ImagenSite/6.jpg)
+![Screenshot do Site Administrativo 1](ImagenSite/7.jpg)
+![Screenshot do Site Administrativo 1](ImagenSite/8.jpg)
 
