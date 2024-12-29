@@ -1,68 +1,52 @@
-<<<<<<< HEAD
-# Projeto-TCC-FarmaSus-Web
-=======
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# 🖥️ Projeto TCC - Site Administrativo Geral e Site Administrativo das UBS
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Este repositório contém o código do site administrativo do meu projeto TCC. O site tem como objetivo gerenciar os dados do aplicativo ([Link do repositório do Aplicativo](link-da-imagem-1)
+) que mostra as UBSs (Unidades Básicas de Saúde) mais próximas com os medicamentos que deseja. O projeto é composto por dois sites administrativos, ambos interligados a um único projeto Laravel e com dois bancos de dados distintos.
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Descrição
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### Site 1: **Administração Geral** (Ministério da Saúde)
+Este site é responsável pelo cadastro de medicamentos, UBSs, clientes, entre outros dados essenciais para o funcionamento do sistema. Ele permite:
+- Cadastro, edição, desativação e visualização dos dados.
+- Visualização de gráficos e tabelas.
+- Filtros e barras de pesquisa para facilitar a busca de dados.
+- Exibição de atividades recentes.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Site 2: **Administração das Farmácias UBS**
+Este site é dedicado à administração das farmácias dentro das UBSs. Ele permite:
+- Visualização de estoque.
+- Realização de entradas e saídas de medicamentos.
+- Cadastro de medicamentos já existentes no sistema.
+- Utilização de filtros e barras de pesquisa.
+- Exibição do status do estoque e das atividades recentes.
 
-## Learning Laravel
+Ambos os sites são interligados e servem de apoio ao aplicativo, permitindo que os usuários vejam quais medicamentos estão disponíveis nas UBSs mais próximas.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Funcionalidades
+- Cadastro de medicamentos, UBSs, clientes e funcionários.
+- Visualização e edição de dados.
+- Sistema de filtro e pesquisa avançada.
+- Visualização de gráficos e atividades recentes.
+- Cadastro de farmácias das UBSs, com controle de estoque.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Tecnologias Utilizadas
+- **Backend**: Laravel (PHP)
+- **Frontend**: HTML, CSS, JavaScript
+- **Banco de Dados**: MySQL
+- **API**: Postman para integração com o aplicativo
+- **Servidor**: Ngrok para execução local
 
-## Laravel Sponsors
+### Banco de Dados
+O projeto utiliza dois bancos de dados MySQL:  
+- **bdAdminGeral**: Contém dados gerais de medicamentos, UBSs, clientes, etc.
+- **bdfarmaciaUBS**: Contém dados específicos sobre farmácias e movimentações de estoque.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Após o cadastro de uma UBS no primeiro site, um e-mail é enviado para a UBS com o link do site administrativo correspondente, permitindo que a UBS tenha acesso apenas aos seus próprios dados. Além disso, as entradas e saídas de medicamentos no segundo site devem utilizar os medicamentos já cadastrados no primeiro banco.
 
-### Premium Partners
+## Screenshots
+Aqui você pode adicionar algumas capturas de tela dos sites para ilustrar o funcionamento do sistema.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+![Screenshot do Site Administrativo 1](link-da-imagem-1)
+![Screenshot do Site Administrativo 2](link-da-imagem-2)
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
->>>>>>> d2ea98a (Primeiro commit do projeto)
